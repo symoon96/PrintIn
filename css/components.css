@@ -14,15 +14,39 @@
 .btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
 
+.btn-portfolio {border-color: #FA5252; border-radius: 1.6rem; height: 3.2rem; color: #FA5252; font-size: 1.6rem; font-weight: 600; width: 14rem; background: #ffffff url('../img/icon/ic_portfolio_r.png') no-repeat left 2rem center; background-size: 2rem; padding-left: 3rem;}
+.btn-more {border: 0; color: #868E96; font-size: 1.4rem; font-weight: 500; padding: 0 2rem 0 4.8rem; background: url('../img/icon/ic_link_c_g.png') no-repeat left 2rem center; height: 2rem; background-size: 2rem;}
+
+.btn-gnb.circle {width: 3.6rem; height: 3.6rem; border-radius: 50%; }
+.btn-gnb.circle.open {background-color: #E9ECEF; background-image: url('../img/icon/ic_header_menu_open.png'); background-size: 2rem;}
+.btn-gnb.circle.close {background-color: #343A40; background-image: url('../img/icon/ic_header_menu_close.png'); background-size: 2rem;}
+
 /* icon */
-i[class^='ic-']{}
+i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+
+.ic-util-login {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_util_login.png');}
+.ic-util-join {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_util_join.png');}
+.ic-util-cs {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_util_cs.png');}
+.ic-util-mypage {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_util_mypage.png');}
+.ic-fnb-location {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_fnb_location.png');}
+.ic-fnb-term {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_fnb_term.png');}
+.ic-fnb-privacy {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_fnb_privacy.png');}
+.ic-fnb-code {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_fnb_code.png');}
+.ic-float-gnb {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_float_menu_off.png');}
+.ic-float-mypage {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_float_mypage_off.png');}
+.ic-float-home {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_float_home_off.png');}
+.ic-float-order {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_float_order_off.png');}
+.ic-float-cs {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_float_cs_off.png');}
 
 /* bullet */
 
 /* list */
 .list-wrap{}
 
-.list-wrap.v1{}
+.list-wrap.v1 ul li {border-bottom: 1px solid #CED4DA;}
+.list-wrap.v1 ul li a {display: flex; align-items: center; height: 6rem; padding: 0 1rem; color: #343A40;}
+.list-wrap.v1 ul li .tit {flex: 1 0; min-width: 0; font-weight: 500; font-size: 1.6rem;}
+.list-wrap.v1 ul li .date {flex: none; font-size: 1.4rem;}
 
 /* img list */
 .img-list{}
@@ -38,13 +62,16 @@ i[class^='ic-']{}
 .phone .inp-item{}
 
 /* title */
-.tit-wrap{}
-.tit-wrap .tit{}
+.tit-wrap {}
+.tit-wrap .tit {}
 
-.tit.v1{}
+.tit-wrap.v1 {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #858E96; padding-bottom: 1rem;}
+
+.tit.v1 {font-size: 2rem; line-height: 1.2; font-weight: 700;}
 
 /* text */
-.txt-warning{}
+.txt-warning {padding-left: 2rem; background: url('../img/icon/ic_warning_o.png') no-repeat left center; background-size: 1.6rem; color: #FD7E14; font-size: 1.2rem; line-height: 1.334; font-weight: 600;}
+.txt-warning strong {display: inline-block; font-weight: 900;}
 .txt-comment{}
 
 /* table */
@@ -69,3 +96,35 @@ i[class^='ic-']{}
 /* form group */
 
 /* form mixins */
+
+/*-------------------------------------------------------------------
+    @반응형
+-------------------------------------------------------------------*/
+/* pc:tablet:mobile = 1:??:0.625 참고 */
+@media screen and (max-width: 720px) {
+    /*-------------------------------------------------------------------
+        @genaral
+    -------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------
+        @elements
+    -------------------------------------------------------------------*/
+    .btn-portfolio {height: 3rem; font-size: 1.4rem; width: 11rem; background: #ffffff url('../img/icon/ic_portfolio_r.png') no-repeat left 1rem center; background-size: 2rem;}
+    .btn-more {font-size: 1.2rem; padding: 0 1rem 0 3rem; background: url('../img/icon/ic_link_c_g.png') no-repeat left 1rem center; height: 1.6rem; background-size: 1.6rem;}
+
+    /* icon */
+    .ic-fnb-location {width: 1.2rem; height: 1.2rem;}
+    .ic-fnb-term {width: 1.2rem; height: 1.2rem;}
+    .ic-fnb-privacy {width: 1.2rem; height: 1.2rem;}
+    .ic-fnb-code {width: 1.2rem; height: 1.2rem;}
+
+    /* list */
+    .list-wrap.v1 ul li a {height: 5rem;}
+    .list-wrap.v1 ul li .tit {font-size: 1.4rem;}
+    .list-wrap.v1 ul li .date {font-size: 1.2rem;}
+
+    /* title */
+    .tit.v1 {font-size: 1.6rem;}
+
+    /* text */
+    .txt-warning {padding-left: 2.4rem; line-height: 1.2;}
+}
