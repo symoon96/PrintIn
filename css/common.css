@@ -182,7 +182,7 @@
     #header .branding .all-gnb {padding: 3rem 1rem;}
     #header .branding .all-gnb::before {font-size: 2rem;}
     #header .branding .all-gnb .depth01 > li > p {font-size: 1.6rem; line-height: 1.2;}
-    @header .branding .all-gnb .depth02 > ul > li > a {font-size: 1.4rem; font-weight: 500;}
+    #header .branding .all-gnb .depth02 > ul > li > a {font-size: 1.4rem; font-weight: 500;}
 
     /*-------------------------------------------------------------------
         @content
