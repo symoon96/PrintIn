@@ -52,7 +52,7 @@ function responsivePortfolio(){
             },
             spaceBetween: 15,
         });
-    } else {
+    } else if($(window).width() >= 720 && portfolioSwiper != undefined) {
         portfolioSwiper.destroy();
         portfolioSwiper = undefined;
     }
