@@ -51,7 +51,7 @@
             <div class="container">
                 <h1 class="logo"><a href="javascript:void(0)">Print In</a></h1>
                 <div class="gnb">
-                    <button class="btn-ic btn-gnb circle open"></button>
+                    <button class="btn-ic btn-gnb circle open" onclick="toggleAllGnb(this)"></button>
                     <ul class="depth01">
                         <li>
                             <a href="javascript:void(0);">무선제본</a>
@@ -112,7 +112,7 @@
             </div>
 
             <div class="all-gnb">
-                <button class="btn-ic btn-gnb close"></button>
+                <button class="btn-ic btn-gnb close" onclick="allGnbClose(this)"></button>
                 <ul class="depth01">
                     <li>
                         <p>무선제본</p>
@@ -139,7 +139,7 @@
                                     </div>
                                 </li>
                             </ul>
-                        <div>
+                        </div>
                     </li>
                     <li>
                         <p>양장제본</p>
@@ -241,7 +241,7 @@
                         <p>탁상달력</p>
                         <div class="depth02">
                             <ul>
-                                <li>
+                                <li class="lg">
                                     <a href="javascript:void(0);">260*185 탁상달력</a>
                                     <div class="depth03">
                                         <ul>
