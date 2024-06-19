@@ -7,7 +7,11 @@
 /*-------------------------------------------------------------------
     @공통
 -------------------------------------------------------------------*/
-.sub{}
+.sub {padding-bottom: 7rem; padding-top: 2rem;}
+.sub .sub-visual + div {padding-top: 2rem;}
+.sub-title {padding-top: 6rem; font-size: 3.6rem; letter-spacing: -0.02em; font-weight: 700; text-align: center;}
+
+.sub-title + .list-top {margin-top: 6rem;}
 
 /* 서브 비쥬얼 */
 .sub-visual{}
@@ -30,4 +34,34 @@
 /*-------------------------------------------------------------------
     @메뉴명
 -------------------------------------------------------------------*/
-/* 서브메뉴명 > 화면명 */
+/* 로그인 */
+.login .inner {max-width: 36rem; margin: 2rem auto 0; border-radius: 1rem; background-color: #F8F9FA; padding: 3rem 3rem;}
+.login .inner .form + .form,
+.login .inner .btn,
+.login .inner .support {margin-top: 3rem;}
+.login .inner .support {display: flex; align-items: center; justify-content: center; gap: 0 2rem;}
+.login .inner .support a {display: flex; align-items: center; font-size: 1.2rem; color: #868E96; gap: 0 0.4rem; line-height: 1.3334;}
+
+/*-------------------------------------------------------------------
+    @반응형
+-------------------------------------------------------------------*/
+/* pc:tablet:mobile = 1:??:0.625 참고 */
+@media screen and (max-width: 1175px){
+    .sub {padding-top: 2rem;}
+    .sub-title {padding-top: 6rem;}
+}
+
+@media screen and (max-width: 720px) {
+    /*-------------------------------------------------------------------
+        @공통
+    -------------------------------------------------------------------*/
+    .sub {padding-bottom: 4rem; padding-top: 2rem;}
+    .sub .sub-visual + div {padding-top: 2rem;]
+    .sub-title {padding-top: 2rem;}
+
+    /*-------------------------------------------------------------------
+        @메뉴명
+    -------------------------------------------------------------------*/
+    /* 로그인 */
+    .login .inner {max-width: none; width: calc(100% + 2rem); margin: 2rem -1rem 0; border-radius: 0; padding: 3rem 3rem;}
+}
