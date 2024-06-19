@@ -20,20 +20,9 @@
 #header .util ul {padding-top: 0.5rem; padding-bottom: 0.5rem; display: flex; justify-content: flex-end; align-items: center; gap: 0 2rem;}
 #header .util ul li a {display: flex; align-items: center; gap: 0 0.4rem; font-size: 12px; color: #868E96; line-height: 1.286;}
 
-.gnb-m{}
+#header .header-fulid {padding-top: 1.5rem; padding-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between;}
 
-.etc {}
-
-.shortcut {}
-
-.util {}
-
-.support {}
-
-.assistant {}
-
-#header .branding {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative; z-index: 11;}
-#header .branding .container {display: flex; align-items: center; justify-content: space-between;}
+#header .branding {position: relative; z-index: 11;}
 
 #header .branding .gnb {display: flex; align-items: center; gap: 0 5rem;}
 #header .branding .gnb .depth01 {display: flex; align-items: center; gap: 0 5rem;}
@@ -61,6 +50,10 @@
 #header .branding .all-gnb .depth03 > ul > li {position: relative;}
 #header .branding .all-gnb .depth03 > ul > li::after {content: ""; width: 1px; height: 1rem; background-color: #CED4DA; position: absolute; right: -1rem; top: 0.3rem;}
 #header .branding .all-gnb .depth03 > ul > li > a {font-size: 1.4rem; line-height: 1.215; display: block; color: #343A40;}
+
+#header .header-mini {display: none; align-items: center; justify-content: flex-start; padding: 1rem 0;}
+#header .header-mini .btn-back {flex: none;}
+#header .header-mini .title {gap: 0 1rem; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em;}
 
 /*-------------------------------------------------------------------
     @footer
@@ -130,9 +123,11 @@
 /* pc:tablet:mobile = 1:??:0.625 참고 */
 @media screen and (max-width: 1175px) {
     #header .util {display: none;}
+    
+    #header .header-fulid {padding: 3rem 0 0; flex-wrap: wrap;}
+    #header:has(.header-mini) .header-fulid {display: none;}
 
-    #header .branding {padding: 3rem 0 0; position: static;}
-    #header .branding .container {flex-wrap: wrap;}
+    #header .branding {position: static;}
     
     #header .logo {margin-left: 5.2rem;}
 
@@ -142,9 +137,9 @@
     #header .branding .gnb .depth01 > li > a {line-height: 1.2;}
 
     #header .branding .all-gnb {position: fixed; top: 0; left: 0; height: 100dvh; width: 30rem; padding: 0 2rem; box-shadow: none; border-bottom: 0; z-index: 2; padding-top: 3rem; padding-bottom: 3rem;}
-    #header .branding .all-gnb.on {display: fixed; flex-direction: column;}
+    #header .branding .all-gnb.on {display: flex; flex-direction: column;}
     #header .branding .all-gnb .btn-gnb {position: absolute; right: -4rem; top: 3rem;}
-    #header .branding .all::before {content: "카테고리"; font-size: 2.4rem; line-height: 1.2; font-weight: 700; flex: none;}
+    #header .branding .all-gnb::before {content: "카테고리"; font-size: 2.4rem; line-height: 1.2; font-weight: 700; flex: none;}
     #header .branding .all-gnb .depth01 {width: 100%; margin-top: 4rem; flex: 1 0; min-height: 0; overflow: auto;}
     #header .branding .all-gnb .depth01 > li {border-bottom: 0; padding: 0 0; flex-direction: column; align-items: flex-start;}
     #header .branding .all-gnb .depth01 > li + li {margin-top: 3rem;}
@@ -155,7 +150,11 @@
     #header .branding .all-gnb .depth02 > ul > li.lg {width: 50%;}
     #header .branding .all-gnb .depth02 > ul > li + li {margin-top: 0;}
     #header .branding .all-gnb .depth02 > ul > li > a {width: 100%; text-align: center; line-height: 2.572;}
-    #header .branding .all-gnb .depth03 {display: none;]
+    #header .branding .all-gnb .depth03 {display: none;}
+
+    #header .header-mini {display: flex;}
+    *:has(.header-mini) .sub-title {display: none;}
+    *:has(.header-mini) .sub-title + .list-top {margin-top: 0;}
 
     /*-------------------------------------------------------------------
         @footer
