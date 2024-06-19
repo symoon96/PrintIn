@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Print In</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="util">
+            <div class="container">
+                <ul>
+                    <li><a href="javascript:void(0);"><i class="ic-util-login"></i>로그인</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-util-join"></i>회원가입</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-util-cs"></i>고객센터</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-util-mypage"></i>마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="branding">
+            <div class="container">
+                <!-- case1 -->
+                <div class="header-fulid">
+                    <h1 class="logo"><a href="javascript:void(0)">Print In</a></h1>
+                    <div class="gnb">
+                        <button class="btn-ic btn-gnb circle open" onclick="toggleAllGnb(this)"></button>
+                        <ul class="depth01">
+                            <li>
+                                <a href="javascript:void(0);">무선제본</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">날개무선책자</a></li>
+                                        <li><a href="javascript:void(0);">일반무선책자</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">양장제본</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">각양장책자</a></li>
+                                        <li><a href="javascript:void(0);">환양장책자</a></li>
+                                        <li><a href="javascript:void(0);">누드양장색자</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">중철제본</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">중철제본</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">스프링제본</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">와이링책자</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">낱장인쇄</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">리플릿</a></li>
+                                        <li><a href="javascript:void(0);">엽서</a></li>
+                                        <li><a href="javascript:void(0);">포스터</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">탁상달력</a>
+                                <div class="depth02">
+                                    <ul>
+                                        <li><a href="javascript:void(0);">260*185 탁상달력</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-portfolio">포트폴리오</button>
+                </div>
+                <!--// case1 -->
+                <!-- case2 -->
+                <div class="header-mini">
+                    <button class="btn-ic btn-back"></button>
+                    <h1 class="title">공지사항</h1>
+                </div>
+                <!--// case2 -->
+            </div>
+
+            <div class="all-gnb">
+                <button class="btn-ic btn-gnb close" onclick="allGnbClose(this)"></button>
+                <ul class="depth01">
+                    <li>
+                        <p>무선제본</p>
+                        <div class="depth02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">날개무선책자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄(토너)</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄(윤전)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">일반무선책자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄(토너)</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄(윤전)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>양장제본</p>
+                        <div class="depth02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">각양장책자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">환양장책자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">누드양장색자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>중철제본</p>
+                        <div class="depth02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">중철제본</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>스프링제본</p>
+                        <div class="depth02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">와이링책자</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>낱장인쇄</p>
+                        <div class="depth02">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">리플릿</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">엽서</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">포스터</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">옵셋인쇄</a></li>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <p>탁상달력</p>
+                        <div class="depth02">
+                            <ul>
+                                <li class="lg">
+                                    <a href="javascript:void(0);">260*185 탁상달력</a>
+                                    <div class="depth03">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">디지털인쇄</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="notice">
+            <div class="container">
+                <p class="sub-title">공지사항</p>
+                <div class="list-top">
+                    <div class="search">
+                        <input type="text" name="" id="" placeholder="검색어를 입력하세요">
+                        <button class="btn-ic btn-search"></button>
+                    </div>
+                </div>
+                <div class="acc-wrap v1">
+                    <ul>
+                        <li class="acc-list">
+                            <div class="acc-tit" data-click>
+                                <p class="tit">이벤트 당첨자 안내</p>
+                                <p class="date">2024.06.01</p>
+                            </div>
+                            <div class="acc-cont">
+                                <p>
+                                    안녕하세요.<br>
+                                    2024년 3월 27일부로 SSG.COM 개인정보처리방침이 개정되어 아래와 같이 안내해 드립니다.<br>
+                                    1. 개정사유<br>
+                                    - 사업자 회원 필수, 선택 개인정보 수집·이용 추가<br>
+                                    - 다이슨 정품 등록 서비스 개인정보 수집·이용 및 제3자 제공 추가<br>
+                                    - 에스티 로더 제휴멤버십 개인정보 제3자 제공 추가<br>
+                                    2. 개정내용<br>
+                                    - <a href="javascript:void(0);">개인정보 처리방침 개정 내용 확인하기</a><br>
+                                    고객님께서 개정일까지 거부의사(회원탈퇴)를 표시하지 않으시는 경우, 본 개인정보 처리방침에 동의하신 것으로 봅니다.<br>
+                                    앞으로도 고객님의 즐겁고 편안한 쇼핑을 위하여 더욱 노력하겠습니다.<br>
+                                    감사합니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="paging">
+                    <ul>
+                        <li class="front"><a href="javascript:void(0);"></a></li>
+                        <li class="prev"><a href="javascript:void(0);"></a></li>
+                        <li class="on"><a href="javascript:void(0);">1</a></li>
+                        <li><a href="javascript:void(0);">2</a></li>
+                        <li><a href="javascript:void(0);">3</a></li>
+                        <li><a href="javascript:void(0);">4</a></li>
+                        <li><a href="javascript:void(0);">5</a></li>
+                        <li class="next"><a href="javascript:void(0);"></a></li>
+                        <li class="back"><a href="javascript:void(0);"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="fnb">
+                <ul>
+                    <li><a href="javascript:void(0);"><i class="ic-fnb-location"></i>찾아오시는 길</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-fnb-term"></i>이용약관</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-fnb-privacy"></i>개인정보 처리방침</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-fnb-code"></i>인쇄작업규약</a></li>
+                </ul>
+            </div>
+            <div class="respond">
+                <div class="headline">
+                    <p class="title">고객센터</p>
+                    <p class="number">1661-4279</p>
+                </div>
+                <div class="respond-info">
+                    <p>
+                        <span>평일 9:00~18:00</span>
+                        <span>점심시간 12:00~13:00</span>
+                        <span>토,일,공휴일 휴무</span><br>
+                        <span>kakaotalk plus+ : Printin</span>
+                        <span>email : printin@naver.com</span>
+                        <span>fax : 070-4332-1577</span>
+                        <span>개인정보보호책임자 : 김수경</span>
+                    </p>
+                </div>
+            </div>
+            <div class="company">
+                <p class="title">(주)인프로세스</p>
+                <div class="company-info">
+                    <p>
+                        <span>경기도 고양시 일산 동구 일산로 38,305호(백석동, 우림보보카운티)</span>
+                        <span>대표자 : 홍정우</span><br>
+                        <span>사업자등록번호 : 496-81-01121</span>
+                        <span>통신판매업신고번호 : 제2018-고양일산동0843호</span><br>
+                        <span>copyright @인프로세스 All right reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating">
+            <div class="inner">
+                <div class="float-gnb">
+                    <ul>
+                        <li><a href="javascript:void(0);"><i class="ic-float-gnb"></i>카테고리</a></li>
+                        <li><a href="javascript:void(0);"><i class="ic-float-mypage"></i>마이페이지</a></li>
+                        <li><a href="javascript:void(0);"><i class="ic-float-home"></i>홈</a></li>
+                        <li><a href="javascript:void(0);"><i class="ic-float-order"></i>주문조회</a></li>
+                        <li><a href="javascript:void(0);"><i class="ic-float-cs"></i>고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>
