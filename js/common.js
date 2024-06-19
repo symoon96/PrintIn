@@ -1,11 +1,11 @@
 $(document).ready(function(){
-
+    accList()
 })
 
 function toggleAllGnb(el){
     let $this = el
 
-    if($($this).hadClass('open')){
+    if($($this).hasClass('open')){
         allGnbOpen()
     } else {
         allGnbClose()
@@ -13,7 +13,7 @@ function toggleAllGnb(el){
 }
 
 function allGnbOpen(){
-    $('.all-gnb).addClass('on');
+    $('.all-gnb').addClass('on');
 
     gnbOpenBtn()
     if($(window).width() < 1175){
