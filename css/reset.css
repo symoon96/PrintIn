@@ -56,10 +56,10 @@ button::-ms-expand,
 textarea::-ms-expand,
 select::-ms-expand{ display: none; }
 
-*::placeholder{ color: #ADB5BD; }
-*::-webkit-input-placeholder{ color: #ADB5BD; }
-*:-ms-input-placeholder{ color: #ADB5BD; }
-*:-mos-input-placeholder{ color: #ADB5BD; }
+*::placeholder{ color: #CED4DA; }
+*::-webkit-input-placeholder{ color: #CED4DA; }
+*:-ms-input-placeholder{ color: #CED4DA; }
+*:-mos-input-placeholder{ color: #CED4DA; }
 
 @media screen and (max-width:1200px) {}
 
