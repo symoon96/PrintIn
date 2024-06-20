@@ -11,8 +11,12 @@
 /* button */
 .btn-wrap{}
 
-.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
+.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; display: flex; width: 100%; justify-content: center; align-items: center;}
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
+
+.btn.lg {height 4.8rem; gap: 0 0.8rem; border-radius: 0.4rem; font-size: 1.4rem;}
+
+.btn.fill-red {background-color: #FA5252; border-color: #FA5252; color: #ffffff;}
 
 .btn-portfolio {border-color: #FA5252; border-radius: 1.6rem; height: 3.2rem; color: #FA5252; font-size: 1.6rem; font-weight: 600; width: 14rem; background: #ffffff url('../img/icon/ic_portfolio_r.png') no-repeat left 2rem center; background-size: 2rem; padding-left: 3rem;}
 .btn-more {border: 0; color: #868E96; font-size: 1.4rem; font-weight: 500; padding: 0 2rem 0 4.8rem; background: url('../img/icon/ic_link_c_g.png') no-repeat left 2rem center; height: 2rem; background-size: 2rem;}
@@ -21,6 +25,8 @@
 .btn-gnb.circle {width: 3.6rem; height: 3.6rem; border-radius: 50%; }
 .btn-gnb.circle.open {background-color: #E9ECEF; background-image: url('../img/icon/ic_header_menu_open.png'); background-size: 2rem;}
 .btn-gnb.circle.close {background-color: #343A40; background-image: url('../img/icon/ic_header_menu_close.png'); background-size: 2rem;}
+.btn-search {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_search.png')}
+.btn-back {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_back.png')}
 
 /* icon */
 i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 100%;}
@@ -43,6 +49,10 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 
 /* list */
 .list-wrap{}
+.list-top {display: flex; align-items: center; justify-content: space-between;}
+.list-top .search {margin-left: auto;}
+
+.list-top + .acc-wrap.v1 {margin-top: 1rem;}
 
 .list-wrap.v1 ul li {border-bottom: 1px solid #CED4DA;}
 .list-wrap.v1 ul li a {display: flex; align-items: center; height: 6rem; padding: 0 1rem; color: #343A40;}
@@ -54,13 +64,18 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 
 .img-list.v1{}
 
-/* form, input */
-.inp-wrap{}
-.inp-item{}
+/* 아코디언탭 */
+.acc-wrap.v1 > ul > li {border-top: 1px solid #CED4DA;}
+.acc-wrap.v1 > ul > li:last-child {border-bottom: 1px solid #CED4DA;}
+.acc-wrap.v1 > ul > li .acc-tit {display: flex; align-items: center; padding: 2rem 2rem; gap: 0 4rem;}
+.acc-wrap.v1 > ul > li .acc-tit::after {content: ""; flex: none; width: 2rem; height: 2rem;}
+.acc-wrap.v1 > ul > li .acc-tit .tit {flex: 1 0; min-width: 0; font-size: 1.4rem; font-weight: 700; padding: 0 2rem;}
+.acc-wrap.v1 > ul > li .acc-tit .date {font-size: 1.4rem; padding: 0 2rem;}
+.acc-wrap.v1 > ul > li .acc-cont {display: none; padding: 2rem 4rem;}
+.acc-wrap.v1 > ul > li .acc-cont p {font-size: 1.4rem;}
+.acc-wrap.v1 > ul > li .acc-cont p a {display: inline-block; text-decoration: underline; color: #4C6EF5;}
+.acc-wrap.v1 > ul > li.on .acc-tit {background-color: #FFF5F5;}
 
-.inp-item input[type="text"]{}
-
-.phone .inp-item{}
 
 /* title */
 .tit-wrap {}
@@ -82,21 +97,38 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .tbl-wrap.v1{}
 
 /* paging */
-.paging{}
-.paging ul{}
-.paging ul li{}
-.paging ul li a{}
-.paging ul li.front{}
-.paging ul li.prev{}
-.paging ul li.next{}
-.paging ul li.back{}
+.paging {display: flex; align-items: center; justify-content: center; margin-top: 4rem;}
+.paging ul {display: flex; align-items: center; justify-content: center; gap: 1rem;}
+.paging ul li {flex: none; width: 2.4rem; height: 2.4rem; line-height: 2.4rem; padding: 0.4rem 0.4rem;}
+.paging ul li a {display: block; width: 1.6rem; height: 1.6rem; line-height: 1.6rem; font-size: 1.1rem; color: #858E96; border-radius: 50%; text-align: center;}
+.paging ul li.on a {background-color: #858E96; color: #ffffff;}
+.paging ul li.front,
+.paging ul li.prev,
+.paging ul li.next,
+.paging ul li.back {padding: 0;}
+.paging ul li.front a,
+.paging ul li.prev a,
+.paging ul li.next a,
+.paging ul li.back a {width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.paging ul li.front a {background-image: url();}
+.paging ul li.prev a {background-image: url();}
+.paging ul li.next a {background-image: url();}
+.paging ul li.back a {background-image: url();}
 
 /*-------------------------------------------------------------------
     @collections
 -------------------------------------------------------------------*/
 /* form group */
+.form.row .form-tit p {font-size: 1.4rem; font-weight: 500;}
+.form.row .form-cont {margin-top: 1rem;}
 
 /* form mixins */
+input[type="text"],
+input[type="password"] {height: 4rem; border-radius: 0.2rem; border: 1px solid #CED4DA; padding: 0 1rem; font-size: 1.4rem; display: block; width: 100%;}
+
+.search {position: relative; width: 30rem;}
+.search input[type="text"] {padding-right: 4rem;}
+.search .btn-search {position: absolute; right: 1rem; top: 1rem;}
 
 /*-------------------------------------------------------------------
     @반응형
@@ -119,13 +151,30 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
     .ic-fnb-code {width: 1.2rem; height: 1.2rem;}
 
     /* list */
+    .list-top + .acc-wrap.v1 {margin-top: 2rem;}
+
     .list-wrap.v1 ul li a {height: 5rem;}
     .list-wrap.v1 ul li .tit {font-size: 1.4rem;}
     .list-wrap.v1 ul li .date {font-size: 1.2rem;}
+
+    /* 아코디언탭 */
+    .acc-wrap.v1 > ul > li .acc-tit {padding: 1.2rem 1rem; gap: 0 1rem;}
+    .acc-wrap.v1 > ul > li .acc-tit .tit {font-size: 1.2rem; padding: 0 0;}
+    .acc-wrap.v1 > ul > li .acc-cont {padding: 1rem 1rem;}
+    .acc-wrap.v1 > ul > li .acc-cont p {font-size: 1.2rem;]
 
     /* title */
     .tit.v1 {font-size: 1.6rem;}
 
     /* text */
     .txt-warning {padding-left: 2.4rem; line-height: 1.2;}
+
+    /* paging */
+    .paging {margin-top: 2rem;}
+
+    /*-------------------------------------------------------------------
+        @elements
+    -------------------------------------------------------------------*/
+    /* form mixins */
+    .search {width: 100%;}
 }
