@@ -44,6 +44,8 @@
                     <li><a href="javascript:void(0);"><i class="ic-util-join"></i>회원가입</a></li>
                     <li><a href="javascript:void(0);"><i class="ic-util-cs"></i>고객센터</a></li>
                     <li><a href="javascript:void(0);"><i class="ic-util-mypage"></i>마이페이지</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-util-deliver"></i>배송</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-util-shoppingbag"></i>장바구니</a></li>
                 </ul>
             </div>
         </div>
@@ -115,7 +117,7 @@
                 <!--// case1 -->
                 <!-- case2 -->
                 <!-- <div class="header-mini">
-                    <button class="btn-ic btn-back"></button>
+                    <button class="btn-ic btn-header-back"></button>
                     <h1 class="title">공지사항</h1>
                 </div> -->
                 <!--// case2 -->
@@ -269,33 +271,276 @@
     <!-- // header -->
 
     <!-- content -->
-    <div id="content" class="sub">
-        <div class="login">
+    <div id="content" class="main">
+        <div class="visual">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/main/img_visual_banner_pc01.png" alt="" data-pc="../img/main/img_visual_banner_pc01.png" data-mobile="../img/main/img_visual_banner_mo01.png"></div>
+                    <div class="swiper-slide"><img src="../img/main/img_visual_banner_pc02.png" alt="" data-pc="../img/main/img_visual_banner_pc02.png" data-mobile="../img/main/img_visual_banner_mo02.png"></div>
+                    <div class="swiper-slide"><img src="../img/main/img_visual_banner_pc03.png" alt="" data-pc="../img/main/img_visual_banner_pc03.png" data-mobile="../img/main/img_visual_banner_mo03.png"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="feature">
             <div class="container">
-                <p class="sub-title">LOGIN</p>
-                <div class="inner">
-                    <div class="form row">
-                        <div class="form-tit">
-                            <p>아이디</p>
+                <ul>
+                    <li>
+                        <img src="../img/main/img_feature01.png" alt="">
+                        <p class="title">책제작 전문</p>
+                        <p class="text">
+                            다양한 제본의 책자를 <br>
+                            1부부터 10만부까지 제작
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../img/main/img_feature02.png" alt="">
+                        <p class="title">간편한 견적</p>
+                        <p class="text">
+                            견적시스템을 통해 <br>
+                            간편/정확한 견적금액 확인
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../img/main/img_feature03.png" alt="">
+                        <p class="title">빠른 진행</p>
+                        <p class="text">
+                            긴급 제작 요청시 <br>
+                            일정 확인 후 빠르게 제작진행
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../img/main/img_feature04.png" alt="">
+                        <p class="title">명확한 프로세스</p>
+                        <p class="text">
+                            데이타, 가제본확인 등<br>
+                            사고 방지를 위한 프로제스 제공
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="container">
+                <p class="headline">포트폴리오</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb01.png" alt="">
+                                </div>
+                                <p class="title">출판도서</p>
+                            </a>
                         </div>
-                        <div class="form-cont">
-                            <input type="text" name="" id="">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb02.png" alt="">
+                                </div>
+                                <p class="title">교육교재</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb03.png" alt="">
+                                </div>
+                                <p class="title">정기간행물</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb04.png" alt="">
+                                </div>
+                                <p class="title">도록/작품사진집</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb05.png" alt="">
+                                </div>
+                                <p class="title">학교(급)문집</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb06.png" alt="">
+                                </div>
+                                <p class="title">학원교재(문제집)</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb07.png" alt="">
+                                </div>
+                                <p class="title">보고서/자료집</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb08.png" alt="">
+                                </div>
+                                <p class="title">선거공보/중철팜플렛</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb09.png" alt="">
+                                </div>
+                                <p class="title">탁상달력</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb10.png" alt="">
+                                </div>
+                                <p class="title">리플렛</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb11.png" alt="">
+                                </div>
+                                <p class="title">포스터/전단</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <div class="thumb">
+                                    <img src="../img/main/@temp_portfolio_thumb12.png" alt="">
+                                </div>
+                                <p class="title">기타</p>
+                            </a>
                         </div>
                     </div>
-                    <div class="form row">
-                        <div class="form-tit">
-                            <p>비밀번호</p>
+                </div>
+            </div>
+        </div>
+        <div class="inform">
+            <div class="container">
+                <div class="division">
+                    <div class="tit-wrap v1">
+                        <div class="tit-area">
+                            <p class="tit v1">공지사항</p>
                         </div>
-                        <div class="form-cont">
-                            <input type="password" name="" id="">
+                        <div class="etc-area">
+                            <button class="btn btn-more">더보기</button>
                         </div>
                     </div>
-                    <button class="btn lg fill-red"><i class="ic-login"></i>로그인</button>
-                    <div class="support">
-                        <a href="javascript:void(0);"><i class="ic-find-join"></i>회원가입</a>
-                        <a href="javascript:void(0);"><i class="ic-find-id"></i>아이디찾기</a>
-                        <a href="javascript:void(0);"><i class="ic-find-pw"></i>비밀번호찾기</a>
+                    <div class="list-wrap v1">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="division">
+                    <div class="tit-wrap v1">
+                        <div class="tit-area">
+                            <p class="tit v1">1:1 문의</p>
+                        </div>
+                        <div class="etc-area">
+                            <button class="btn btn-more">더보기</button>
+                        </div>
+                    </div>
+                    <div class="list-wrap v1">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <p class="tit">제목제목제목제목제목제목제목제목</p>
+                                    <p class="date">2024.06.01</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tool">
+            <div class="container">
+                <div class="division">
+                    <dl>
+                        <dt>
+                            <p>결제계좌</p>
+                        </dt>
+                        <dd>
+                            <div class="cont">
+                                <div class="name">
+                                    <img src="../img/main/img_tool_logo01.png" alt="">
+                                </div>
+                                <div class="text-area">
+                                    <p class="text01">452-038946-01-015</p>
+                                    <p class="text02">주식회사 인프로세스</p>
+                                </div>
+                            </div>
+                            <p class="txt-warning">입금시 입금자명과 금액을 일치되게 입금해 주시기 바랍니다.</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="division">
+                    <dl>
+                        <dt>
+                            <p>파일업로드</p>
+                        </dt>
+                        <dd>
+                            <div class="cont">
+                                <div class="name">
+                                    <img src="../img/main/img_tool_logo02.png" alt="">
+                                </div>
+                                <div class="text-area">
+                                    <dl>
+                                        <dt>ID</dt>
+                                        <dd>hy5995</dd>
+                                        
+                                    </dl>
+                                    <dl>
+                                        <dt>PW</dt>
+                                        <dd>yy12011201</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <p class="txt-warning">로그인 후 프린트인 폴더에 <strong>고객명-상품명</strong>으로 파일을 업로드해 주세요.</p>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -350,7 +595,7 @@
                     <ul>
                         <li><a href="javascript:void(0);"><i class="ic-float-gnb"></i>카테고리</a></li>
                         <li><a href="javascript:void(0);"><i class="ic-float-mypage"></i>마이페이지</a></li>
-                        <li><a href="javascript:void(0);"><i class="ic-float-home"></i>홈</a></li>
+                        <li class="on"><a href="javascript:void(0);"><i class="ic-float-home"></i>홈</a></li>
                         <li><a href="javascript:void(0);"><i class="ic-float-order"></i>주문조회</a></li>
                         <li><a href="javascript:void(0);"><i class="ic-float-cs"></i>고객센터</a></li>
                     </ul>

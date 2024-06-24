@@ -8,19 +8,18 @@
     @공통
 -------------------------------------------------------------------*/
 .sub {padding-bottom: 7rem; padding-top: 2rem;}
-.sub .sub-visual + div {padding-top: 2rem;}
+.sub:has(.sub-visual) {padding-top: 0;}
+.sub .sub-visual + div {padding-top: 4rem;}
 .sub-title {padding-top: 6rem; font-size: 3.6rem; letter-spacing: -0.02em; font-weight: 700; text-align: center;}
 
 .sub-title + .list-top {margin-top: 6rem;}
 
 /* 서브 비쥬얼 */
-.sub-visual{}
+.sub-visual {height: 32rem; background-repeat: no-repeat; background-size: 192rem; background-position: center;}
+.sub-visual.bg01 {background-image: url('../img/sub/bg_visual_pc01.png');}
 
-.sub-visual.bg01{}
-
-.sub-visual .tit-visual{}
-
-.sub-visual .txt-visual{}
+.sub-visual .container {height: 100%; display: flex; align-items: center; justify-content: flex-start;}
+.sub-visual .tit-visual {font-size: 3.6rem; color: #ffffff; font-weight: 700;}
 
 /* location */
 .loc{  }
@@ -42,6 +41,57 @@
 .login .inner .support {display: flex; align-items: center; justify-content: center; gap: 0 2rem;}
 .login .inner .support a {display: flex; align-items: center; font-size: 1.2rem; color: #868E96; gap: 0 0.4rem; line-height: 1.3334;}
 
+/* 고객센터 */
+.cs .faq-area {margin-top: 6rem;}
+.cs .faq-area .faq-headline {display: flex; align-items: center; justify-content: space-between;}
+.cs .faq-area .faq-headline .title {display: flex; flex: none; align-items: center; justify-content: flex-start; gap: 0 0.8rem; font-weight: 700; font-size: 2.4rem;}
+.cs .faq-area .faq-headline .title strong {color: #FA5252;}
+.cs .faq-area .faq-content {margin-top: 2rem;}
+.cs .faq-area .faq-content ul {display: flex; flex-wrap: wrap;}
+.cs .faq-area .faq-content ul li {flex: none; width: 20%; border-right: 1px solid #CED4DA; border-bottom: 1px solid #CED4DA;}
+.cs .faq-area .faq-content ul li:nth-child(5n + 1) {border-left: 1px solid #CED4DA;}
+.cs .faq-area .faq-content ul li:nth-child(-n + 5) {border-top: 1px solid #CED4DA;}
+.cs .faq-area .faq-content ul li a {display: block; padding: 2rem 3.5rem; height: 100%;}
+.cs .faq-area .faq-content ul li a .number {width: 4rem; height: 4rem; border-radius: 50%; background-color: #E9ECEF; text-align: center; line-height: 4rem; color: #343A40; font-size: 1.6rem; font-weight: 700; margin: 0 auto;}
+.cs .faq-area .faq-content ul li a .text {text-align: center; word-break: keep-all; color: #343A40; font-weight: 500; margin-top: 2.2rem; line-height: 1.4; text-align: center; font-size: 2rem; font-weight: 500;}
+.cs .cs-info {margin-top: 8rem; padding: 3rem 0; background-color: #F8F9FA;}
+.cs .cs-info > .title {text-align: center; font-size: 3rem; font-weight: 700; line-height: 1.4;}
+.cs .cs-info ul {margin-top: 3rem; display: flex; align-items: center; justify-content: center; gap: 1rem 5.4rem;}
+.cs .cs-info ul li {display: flex; align-items: center; justify-content: flex-start; gap: 0 0.8rem;}
+.cs .cs-info ul li .title {display: flex; flex: none; align-items: center; justify-content: flex-start; gap: 0 0.8rem; font-weight: 700; font-size: 2.4rem;}
+.cs .cs-info ul li .text {font-weight: 700; font-size: 2.4rem; color: #FA5252;}
+.cs .tab-wrap.v1 {margin-top: 8rem;}
+.cs .btn-wrap {margin-top: 3rem;}
+
+/* 찾아오시는 길 */
+.location .tab-wrap.v1 {margin-top: 6rem;}
+.location .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 4rem; overflow: hidden;}
+.location .location-info {width: calc(100% - 74.5rem); float: left;}
+.location .location-info dl {display: flex; align-items: flex-start; justify-content: flex-start; gap: 0 0.8rem;}
+.location .location-info dl + dl {margin-top: 2rem;}
+.location .location-info dl dt {display: flex; align-items: center; justify-content: center; height: 1.7rem}
+.location .location-info dl:nth-child(2) dt {height: 2.8rem;}
+.location .location-info dl dd {font-size: 1.4rem; }
+.location .location-info dl dd strong {font-size: 2rem; display: inline-block; line-height: 1.4; font-weight: 500;}
+.location .location-info dl dd {display: flex; flex-wrap: wrap;}
+.location .location-info dl dd span {margin-right: 2rem; display: inline-block; font-size: 1.4rem; position: relative;}
+.location .location-info dl dd span::after {content: ""; width: 1px; height: 1.6rem; background-color: #343A40; position: absolute; right: -1.1rem; top: 50%; transform: translateY(-50%);}
+.location .location-info dl dd span:last-child {margin-right: 0;}
+.location .location-info dl dd span:last-child::after {display: none;}
+.location .map-area {width: 68rem; height: 50rem; float: left; margin-left: 6.5rem; background-color: #E9ECEF;}
+
+/*-------------------------------------------------------------------
+    @팝업
+-------------------------------------------------------------------*/
+.pop-detail-faq {max-width: 75rem; width: calc(100% - 4rem);}
+.pop-detail-faq .text-area {padding: 0 1rem;}
+.pop-detail-faq .text-area .title {font-size: 2.4rem; font-weight: 700; letter-spacing: -0.02em;}
+.pop-detail-faq .text-area ol {list-style: auto; padding: 0 1.5rem; margin-top: 2rem;}
+.pop-detail-faq .text-area ol li {font-size: 1.4rem; line-height: 1.6;}
+.pop-detail-faq .text-area ol li + li {margin-top: 2.2rem;}
+.pop-detail-faq .btn-wrap {border-top: 1px solid #CED4DA; margin-top: 3rem; padding-top: 3rem;}
+.pop-detail-faq .btn-wrap .btn {width: 16rem;}
+
 /*-------------------------------------------------------------------
     @반응형
 -------------------------------------------------------------------*/
@@ -49,6 +99,11 @@
 @media screen and (max-width: 1175px){
     .sub {padding-top: 2rem;}
     .sub-title {padding-top: 6rem;}
+
+    /* 찾아오시는 길 */
+    .location .tab-wrap.v1 .tab-cont-wrap .tab-cont {overflow: visible;}
+    .location .location-info {width: 100%; float: none;}
+    .location .map-area {width: calc(100% + 4rem); margin-left: -2rem; margin-right: -2rem; float: none; margin-top: 2rem;}
 }
 
 @media screen and (max-width: 720px) {
@@ -56,12 +111,56 @@
         @공통
     -------------------------------------------------------------------*/
     .sub {padding-bottom: 4rem; padding-top: 2rem;}
-    .sub .sub-visual + div {padding-top: 2rem;]
-    .sub-title {padding-top: 2rem;}
+    .sub .sub-visual + div {padding-top: 2rem;}
+    .sub-title {padding-top: 2rem; font-size: 2.4rem;}
+
+    /* 서브 비쥬얼 */
+    .sub-visual {height: 16rem; background-size: cover;}
+    .sub-visual.bg01 {background-image: url('../img/sub/bg_visual_mo01.png');}
+
+    .sub-visual .container {padding-left: 3rem; padding-right: 3rem;}
+    .sub-visual .tit-visual {font-size: 2rem;}
 
     /*-------------------------------------------------------------------
         @메뉴명
     -------------------------------------------------------------------*/
     /* 로그인 */
     .login .inner {max-width: none; width: calc(100% + 2rem); margin: 2rem -1rem 0; border-radius: 0; padding: 3rem 3rem;}
+
+    /* 고객센터 */
+    .cs .faq-area {margin-top: 4rem;}
+    .cs .faq-area .faq-headline .title {font-size: 1.6rem;}
+    .cs .faq-area .faq-content {margin-top: 2.2rem;}
+    .cs .faq-area .faq-content ul {padding: 0 1rem; overflow: auto; width: calc(100% + 2rem); margin-left: -1rem; margin-right: -1rem; flex-wrap: nowrap;}
+    .cs .faq-area .faq-content ul li {flex: none; width: 15rem; border-top: 1px solid #CED4DA;}
+    .cs .faq-area .faq-content ul li:nth-child(5n + 1) {border-left: 0;}
+    .cs .faq-area .faq-content ul li:first-child {border-left: 1px solid #CED4DA;}
+    .cs .faq-area .faq-content ul li a {padding: 2rem 2rem;}
+    .cs .faq-area .faq-content ul li a .text {margin-top: 0.8rem; font-size: 1.4rem;}
+    .cs .cs-info {margin-top: 4rem;}
+    .cs .cs-info > .title {font-size: 2rem;}
+    .cs .cs-info ul {margin-top: 2rem; flex-direction: column;}
+    .cs .cs-info ul li .title {font-size: 1.6rem;}
+    .cs .cs-info ul li .text {font-size: 1.6rem;}
+    .cs .tab-wrap.v1 {margin-top: 4rem;}
+    .cs .btn-wrap {margin-top: 2rem;}
+
+    /* 찾아오시는 길 */
+    .location .tab-wrap.v1 {margin-top: 4rem;}
+    .location .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 2rem;}
+    .location .location-info dl:nth-child(2) dt {height: 2.2rem;}
+    .location .location-info dl dd {font-size: 1.2rem; line-height: 1.4;}
+    .location .location-info dl dd strong {font-size: 1.6rem;}
+    .location .map-area {width: calc(100% + 2rem); margin-left: -1rem; margin-right: -1rem; height: 36rem;}
+
+    /*-------------------------------------------------------------------
+        @팝업
+    -------------------------------------------------------------------*/
+    .pop-detail-faq {width: calc(100% - 2rem);}
+    .pop-detail-faq .text-area {padding: 0 0;}
+    .pop-detail-faq .text-area .title {font-size: 1.6rem;}
+    .pop-detail-faq .text-area ol li {font-size: 1.2rem;}
+    .pop-detail-faq .text-area ol li + li {margin-top: 1.9rem;}
+    .pop-detail-faq .btn-wrap {margin-top: 2rem; padding-top: 2rem;}
+    .pop-detail-faq .btn-wrap .btn {width: 12rem;}
 }

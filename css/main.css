@@ -89,7 +89,6 @@
     .main .tool .container .division > dl > dd {padding: 2.4rem 0 1.5rem; gap: 1.5rem 0;}
     .main .tool .container .division > dl > dd .cont {gap: 0 3rem;}
     .main .tool .container .division:nth-child(1) > dl > dd .cont .name {width: 11.8rem}
-    .main .tool .container .division:nth-child(2) > dl > dd .cont .name {width: 17.2rem}
     .main .tool .container .division > dl > dd .cont .text-area::before {height: 3rem; left: -1.5rem;}
     .main .tool .container .division > dl > dd .cont .text-area .text01 {font-size: 1.6rem;}
     .main .tool .container .division > dl > dd .cont .text-area .text02 {font-size: 1.2rem; margin-top: 0.2rem;}
