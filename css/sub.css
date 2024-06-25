@@ -80,6 +80,25 @@
 .location .location-info dl dd span:last-child::after {display: none;}
 .location .map-area {width: 68rem; height: 50rem; float: left; margin-left: 6.5rem; background-color: #E9ECEF;}
 
+/* 포트폴리오 */
+.work .sub-title + .tab-wrap.v1 {margin-top: 8rem;}
+.work .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 4rem;}
+
+/* 마이페이지 */
+.mypage .sub-title + .status-wrap {margin-top: 6rem;}
+.mypage .status-wrap .more-area {display: flex; align-items: center; justify-content: space-between;}
+.mypage .status-wrap .more-area p {font-size: 1.6rem; font-weight: 500;}
+.mypage .status-wrap .status-area {margin-top: 1rem; background-color: #F1F3F5; border-radius: 1rem; display: flex; align-items: center; justify-content: center; gap: 0 11.5rem; padding: 4rem 0;}
+.mypage .status-wrap .status-area dl {position: relative;}
+.mypage .status-wrap .status-area dl + dl::before {content: ""; width: 2.4rem; height: 2.4rem; position: absolute; top: 50%; left: - 6rem; background: url('../img/icon/ic_mypage_status_arr.png') no-repeat center; background-size: 100%}
+.mypage .status-wrap .status-area dl dd {width: 6rem; height: 6rem; border-radius: 50%; background-color: #ffffff; text-align: center; line-height: 6rem; font-size: 2.4rem; letter-spacing: -0.02rem; font-weight: 500;}
+.mypage .status-wrap .status-area dl dt {text-align: center; margin-top: 0.8rem; font-size: 1.6rem; line-height: 1.4rem; color: #858E96;}
+.mypage .status-wrap .status-area dl.item01 dd{background-color: #FA5252; color: #ffffff;}
+.mypage .status-wrap .status-area dl.item01 dd{color: #FA5252;}
+.mypage .status-wrap .status-area dl.item01 dd{color: #FAB005;}
+.mypage .status-wrap .status-area dl.item01 dd{color: #4C6EF5;}
+.mypage .status-wrap .status-area dl.item01 dd{background-color: #343A40; color: #ffffff;}
+
 /*-------------------------------------------------------------------
     @팝업
 -------------------------------------------------------------------*/
@@ -152,6 +171,10 @@
     .location .location-info dl dd {font-size: 1.2rem; line-height: 1.4;}
     .location .location-info dl dd strong {font-size: 1.6rem;}
     .location .map-area {width: calc(100% + 2rem); margin-left: -1rem; margin-right: -1rem; height: 36rem;}
+
+    /* 포트폴리오 */
+    .work .sub-title + .tab-wrap.v1 {margin-top: 4rem;}
+    .work .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 2rem;}
 
     /*-------------------------------------------------------------------
         @팝업
