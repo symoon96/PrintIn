@@ -88,16 +88,41 @@
 .mypage .sub-title + .status-wrap {margin-top: 6rem;}
 .mypage .status-wrap .more-area {display: flex; align-items: center; justify-content: space-between;}
 .mypage .status-wrap .more-area p {font-size: 1.6rem; font-weight: 500;}
-.mypage .status-wrap .status-area {margin-top: 1rem; background-color: #F1F3F5; border-radius: 1rem; display: flex; align-items: center; justify-content: center; gap: 0 11.5rem; padding: 4rem 0;}
+.mypage .status-wrap .status-area {margin-top: 1rem; background-color: #F1F3F5; border-radius: 1rem; display: flex; align-items: center; justify-content: center; gap: 0 11.5rem; padding: 4rem 4rem;}
 .mypage .status-wrap .status-area dl {position: relative;}
-.mypage .status-wrap .status-area dl + dl::before {content: ""; width: 2.4rem; height: 2.4rem; position: absolute; top: 50%; left: - 6rem; background: url('../img/icon/ic_mypage_status_arr.png') no-repeat center; background-size: 100%}
+.mypage .status-wrap .status-area dl + dl::before {content: ""; width: 2.4rem; height: 2.4rem; position: absolute; top: 50%; left: -6rem; background: url('../img/icon/ic_mypage_status_arr.png') no-repeat center; background-size: 100%; transform: translate(-50%, -50%);}
 .mypage .status-wrap .status-area dl dd {width: 6rem; height: 6rem; border-radius: 50%; background-color: #ffffff; text-align: center; line-height: 6rem; font-size: 2.4rem; letter-spacing: -0.02rem; font-weight: 500;}
 .mypage .status-wrap .status-area dl dt {text-align: center; margin-top: 0.8rem; font-size: 1.6rem; line-height: 1.4rem; color: #858E96;}
 .mypage .status-wrap .status-area dl.item01 dd{background-color: #FA5252; color: #ffffff;}
-.mypage .status-wrap .status-area dl.item01 dd{color: #FA5252;}
-.mypage .status-wrap .status-area dl.item01 dd{color: #FAB005;}
-.mypage .status-wrap .status-area dl.item01 dd{color: #4C6EF5;}
-.mypage .status-wrap .status-area dl.item01 dd{background-color: #343A40; color: #ffffff;}
+.mypage .status-wrap .status-area dl.item02 dd{color: #FA5252;}
+.mypage .status-wrap .status-area dl.item03 dd{color: #FAB005;}
+.mypage .status-wrap .status-area dl.item04 dd{color: #4C6EF5;}
+.mypage .status-wrap .status-area dl.item05 dd{background-color: #343A40; color: #ffffff;}
+.mypage .recent {display: flex; align-items: center; justify-content: flex-start; margin-top: 2rem; border-top: 1px solid #CED4DA; border-bottom: 1px solid #CED4DA; padding: 2rem 4rem; flex-wrap: wrap;}
+.mypage .recent .date-area {width: 14rem;}
+.mypage .recent .date-area p {font-size: 1.4rem; font-weight: 600;}
+.mypage .recent .text-area {flex: 1 0;}
+.mypage .recent .text-area .title {font-size: 1.6rem; font-weight: 500; }
+.mypage .recent .text-area .text {font-size: 1.4rem; margin-top: 0.8rem; line-height: 1.6; color: #868E96;}
+.mypage .recent .price-area {width: 24rem; text-align: center;}
+.mypage .recent .price-area .unit {font-size: 1.4rem;}
+.mypage .recent .price-area .price {font-size: 1.6rem; font-weight: 700; margin-top: 1rem;}
+.mypage .recent .payment-area {width: 28rem;}
+.mypage .recent .payment-area .status {font-size: 2.4rem; font-weight: 700;}
+.mypage .recent .payment-area .status.clr01 {color: #FA5252;}
+.mypage .recent .payment-area .status.clr02 {color: #FD7E14;}
+.mypage .recent .payment-area .status.clr03 {color: #FAB005;}
+.mypage .recent .payment-area .status.clr04 {color: #4C6EF5;}
+.mypage .recent .payment-area .status.clr05 {color: #343A40;}
+.mypage .recent .payment-area .text {font-size: 1.4rem; color: #868E96; margin-top: 0.4rem; line-height: 1.6;}
+.mypage .recent .payment-area .account {font-size: 1.4rem; margin-top: 0.4rem; line-height: 1.6;}
+.mypage .history {margin-top: 8rem; display: flex; align-items: flex-start; gap: 6rem 5rem}
+.mypage .history > .division {flex: 1 0;}
+
+/* 주문내역 */
+.order .sub-title + .tab-wrap.v1 {margin-top: 6rem;}
+.order .sub-title + .tab-wrap.v1 > .tab-btn-wrap {justify-content: center;}
+.order .sub-title + .tab-wrap.v1 > .tab-cont-wrap > .tab-cont {margin-top: 9rem;}
 
 /*-------------------------------------------------------------------
     @팝업
@@ -123,6 +148,22 @@
     .location .tab-wrap.v1 .tab-cont-wrap .tab-cont {overflow: visible;}
     .location .location-info {width: 100%; float: none;}
     .location .map-area {width: calc(100% + 4rem); margin-left: -2rem; margin-right: -2rem; float: none; margin-top: 2rem;}
+
+    /* 마이페이지 */
+    .mypage .status-wrap .more-area p {font-size: 1.6rem; font-weight: 500;}
+    .mypage .status-wrap .status-area {gap: 0 0; justify-content: space-between;}
+    .mypage .status-wrap .status-area dl {position: relative;}
+    .mypage .status-wrap .status-area dl + dl::before {left: calc((100vw - 59rem)/-5);}
+    .mypage .recent {position: relative; padding: 2rem 16rem 2rem 4rem;}
+    .mypage .recent .date-area {width: 100%;}
+    .mypage .recent .text-area {margin-top: 0.4rem;}
+    .mypage .recent .text-area .text {margin-top: 1rem;}
+    .mypage .recent .price-area {width: 12rem; position: absolute; right: 4rem; top: 50%; transform: translateY(-50%); text-align: right;}
+    .mypage .recent .payment-area {width: 100%; margin-top: 1rem;}
+    .mypage .recent .payment-area .status {position: absolute; top: 2rem; right: 4rem; width: 12rem; text-align: right;}
+    .mypage .recent .payment-area .text {margin-top: 0;}
+    .mypage .history {flex-direction: column;}
+    .mypage .history > .division {width: 100%; flex: none;}
 }
 
 @media screen and (max-width: 720px) {
@@ -175,6 +216,22 @@
     /* 포트폴리오 */
     .work .sub-title + .tab-wrap.v1 {margin-top: 4rem;}
     .work .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 2rem;}
+
+    /* 마이페이지 */
+    .mypage .sub-title + .status-wrap {margin-top: 4rem;}
+    .mypage .status-wrap .more-area p {font-size: 1.4rem;}
+    .mypage .status-wrap .status-area {width: calc(100% + 2rem); margin-left: -1rem; margin-right: -1rem; border-radius: 0; padding: 2rem 1.5rem;}
+    .mypage .status-wrap .status-area dl + dl::before {left: -1.6rem; width: 1.6rem; height: 1.6rem;}
+    .mypage .status-wrap .status-area dl dd {width: 4rem; height: 4rem; line-height: 4rem; font-size: 1.6rem;}
+    .mypage .status-wrap .status-area dl dt {margin-top: 0.8rem; font-size: 1.2rem;}
+    .mypage .recent {margin-top: 1.2rem; padding: 1rem 9rem 1rem 1rem;}
+    .mypage .recent .text-area .title {font-size: 1.4rem;}
+    .mypage .recent .text-area .text {font-size: 1.2rem;}
+    .mypage .recent .price-area {width: 9rem; right: 1rem;}
+    .mypage .recent .payment-area .status {right: 1rem; width: 9rem; font-size: 1.6rem;}
+    .mypage .recent .payment-area .text {font-size: 1.2rem;}
+    .mypage .recent .payment-area .account {margin-top: 0; font-size: 1.2rem;}
+    .mypage .history {margin-top: 6rem;}
 
     /*-------------------------------------------------------------------
         @팝업

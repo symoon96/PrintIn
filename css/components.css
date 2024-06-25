@@ -14,7 +14,8 @@
 .btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; display: flex; justify-content: center; align-items: center; font-weight: 500;}
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
 
-.btn.lg {height: 4.8rem; gap: 0 0.8rem; border-radius: 0.4rem; font-size: 1.4rem; padding: 0 2rem;}
+.btn.xl {height: 4.8rem; gap: 0 0.8rem; border-radius: 0.4rem; font-size: 1.4rem; padding: 0 2rem;}
+.btn.lg {height: 4rem; gap: 0 0.8rem; border-radius: 0.4rem; font-size: 1.4rem; padding: 0 2rem;}
 .btn.md {height: 3.2rem; gap: 0 0.8rem; border-radius: 0.4rem; font-size: 1.4rem; padding: 0 2rem;}
 
 .btn.line-dark {background-color: #ffffff; border-color: #343A40; color: #343A40;}
@@ -30,7 +31,7 @@
 .btn-gnb.circle {width: 3.6rem; height: 3.6rem; border-radius: 50%; }
 .btn-gnb.circle.open {background-color: #E9ECEF; background-image: url('../img/icon/ic_header_menu_open.png'); background-size: 2rem;}
 .btn-gnb.circle.close {background-color: #343A40; background-image: url('../img/icon/ic_header_menu_close.png'); background-size: 2rem;}
-.btn-search {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_search.png')}
+.btn-search {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_search_r.png')}
 .btn-header-back {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_header_back.png')}
 .btn-pop-close {width: 2rem; height: 2rem; background-image: url('../img/icon/ic_pop_close.png')}
 
@@ -84,7 +85,9 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .ic-sample {width: 2rem; height: 2rem;}
 .ic-sample.blue {background-image: url('../img/icon/ic_sample_b.png');}
 
-/* bullet */
+/* label */
+.label.v1 {display: inline-block; padding: 0 0.8rem; line-height: 1.4; border-radius: 1rem; font-weight: 500; font-size: 1.2rem;}
+.label.v1.clr01 {background-color: #DBE4FF; color: #4C6EF5;}
 
 /* list */
 .list-wrap{}
@@ -97,6 +100,26 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .list-wrap.v1 ul li a {display: flex; align-items: center; height: 6rem; padding: 0 1rem; color: #343A40;}
 .list-wrap.v1 ul li .tit {flex: 1 0; min-width: 0; font-weight: 500; font-size: 1.6rem;}
 .list-wrap.v1 ul li .date {flex: none; font-size: 1.4rem;}
+
+.list-wrap.v2 > ul > li {border-bottom: 1px solid #CED4DA; padding: 2rem 1rem; display: flex; align-items: center;}
+.list-wrap.v2 > ul > li .text-area {flex: 1 0;}
+.list-wrap.v2 > ul > li .text-area .date {font-size: 1.4rem;}
+.list-wrap.v2 > ul > li .text-area .tit {font-size: 1.6rem; font-weight: 500; margin-top: 1.5rem;}
+.list-wrap.v2 > ul > li .text-area .txt {margin-top: 0.8rem; font-size: 1.6rem; line-height: 1.6; color: #868E96;}
+.list-wrap.v2 > ul > li .price-area {width: 14rem; text-align: center;}
+.list-wrap.v2 > ul > li .price-area .unit {font-size: 1.4rem;}
+.list-wrap.v2 > ul > li .price-area .price {margin-top: 1rem; font-size: 1.6rem; font-weight: 700;}
+.list-wrap.v2 > ul > li .etc-area {width: 11.5rem;}
+.list-wrap.v2 > ul > li .etc-area .btn {width: 11.5rem; padding: 0;}
+.list-wrap.v2 > ul > li .etc-area .btn + .btn {margin-top: 1rem;}
+
+.list-wrap.v3 > ul > li {border-bottom: 1px solid #CED4DA; padding: 2rem 1rem;}
+.list-wrap.v3 > ul > li > div {display: flex; align-items: flex-start;}
+.list-wrap.v3 > ul > li > div + div {margin-top: 1rem;}
+.list-wrap.v3 > ul > li > div .tit {flex: 1 0; display: flex; align-items: center; justify-content: flex-start; gap: 0 0.4rem;}
+.list-wrap.v3 > ul > li > div .date {flex: none; font-size: 1.4rem;}
+.list-wrap.v3 > ul > li .question .tit {font-size: 1.4rem; font-weight: 700;}
+.list-wrap.v3 > ul > li .answer .tit {font-size: 1.4rem;}
 
 /* img list */
 .img-list{}
@@ -130,7 +153,7 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .acc-wrap.v2 > ul > li.on .acc-tit::after {transform: rotate(-180deg);}
 
 /* 탭 */
-.tab-wrap.v1 .tab-btn-wrap {display: flex; align-items: center; justify-content: flex-start; gap: 08rem 0.4rem; flex-wrap: wrap; align-items: stretch;}
+.tab-wrap.v1 .tab-btn-wrap {display: flex; align-items: center; justify-content: flex-start; gap: 0.8rem 0.4rem; flex-wrap: wrap; align-items: stretch;}
 .tab-wrap.v1 .tab-btn-wrap .tab-btn {width: calc((100% - 2.4rem)/7); padding: 1rem 0; line-height: 1.25; border: 1px solid #CED4DA; text-align: center; flex: none; font-weight: 500; font-size: 1.6rem; letter-spacing: -0.02em; border-radius: 2.1rem;}
 .tab-wrap.v1 .tab-btn-wrap .tab-btn.on {background-color: #FA5252; border-color: #FA5252; color: #ffffff;}
 .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 2rem;}
@@ -273,6 +296,14 @@ select.v1 {height: 4rem; border-radius: 0.2rem; border: 1px solid #CED4DA; paddi
 .check.v2 input[type="checkbox"] + label::before {content: ""; width: 1.6rem; height: 1.6rem; background: url('../img/icon/ic_inp_check_off01.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .check.v2 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_inp_check_on01.png') no-repeat center; background-size: 100%;}
 
+.date.v1 {position: relative;}
+.date.v1 input[type="date"] {width: 100%; height: 32px; display: block; opacity: 0; position: absolute; top: 0; left: 0; z-index: 2;}
+.date.v1 input[type="date"]::-webkit-clear-button,
+.date.v1 input[type="date"]::-webkit-inner-spin-button {display: block; cursor: pointer;} 
+.date.v1 input[type="date"]::-webkit-calendar-picker-indicator {background: transparent; z-index: 1; width: 44px; height: 44px; cursor: pointer;} 
+.date.v1::after {position: absolute; top: 50%; right: 10px; content: ''; width: 24px; height: 24px; cursor: pointer; background: url('../img/icon/ic_date_default.png') no-repeat center; background-size: 100%; transform: translateY(-50%); z-index: 0;}
+.date.v1.disabled::after {background: url('../img/icon/ic_date_disabled.png') no-repeat center; background-size: 100%;}
+
 /*-------------------------------------------------------------------
     @반응형
 -------------------------------------------------------------------*/
@@ -315,6 +346,20 @@ select.v1 {height: 4rem; border-radius: 0.2rem; border: 1px solid #CED4DA; paddi
     .list-wrap.v1 ul li a {height: 5rem;}
     .list-wrap.v1 ul li .tit {font-size: 1.4rem;}
     .list-wrap.v1 ul li .date {font-size: 1.2rem;}
+
+    .list-wrap.v2 > ul > li {padding: 1rem 1rem; flex-wrap: wrap;}
+    .list-wrap.v2 > ul > li .text-area .date {font-size: 1.2rem;}
+    .list-wrap.v2 > ul > li .text-area .tit {font-size: 1.4rem; margin-top: 1rem;}
+    .list-wrap.v2 > ul > li .text-area .txt {font-size: 1.2rem;}
+    .list-wrap.v2 > ul > li .price-area {width: 8.5rem; text-align: right;}
+    .list-wrap.v2 > ul > li .price-area .unit {font-size: 1.2rem;}
+    .list-wrap.v2 > ul > li .price-area .price {margin-top: 0.4rem; font-size: 1.4rem;}
+    .list-wrap.v2 > ul > li .etc-area {width: calc(100% - 8.5rem); margin-top: 1rem; display: flex; gap: 0 1rem;}
+    .list-wrap.v2 > ul > li .etc-area .btn {flex: 1 0;}
+    .list-wrap.v2 > ul > li .etc-area .btn + .btn {margin-top: 0;}
+    
+    .list-wrap.v3 > ul > li {padding: 1rem 1rem;}
+    .list-wrap.v3 > ul > li > div .date {font-size: 1.2rem;}
 
     /* 아코디언탭 */
     .acc-wrap.v1 > ul > li .acc-tit {padding: 1.2rem 1rem; gap: 0 1rem;}
