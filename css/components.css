@@ -116,9 +116,22 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .acc-wrap.v1 > ul > li.on .acc-tit {background-color: #FFF5F5;}
 .acc-wrap.v1 > ul > li.on .acc-tit::after {transform: rotate(-180deg);}
 
+.acc-wrap.v2 > ul > li {background-color: #F8F9FA; border: 1px solid #F8F9FA; border-radius: 1rem; padding: 2rem 4rem;}
+.acc-wrap.v2 > ul > li + li {margin-top: 1rem;}
+.acc-wrap.v2 > ul > li .acc-tit {display: flex; align-items: center; justify-content: flex-start; gap: 0 5rem;}
+.acc-wrap.v2 > ul > li .acc-tit:after {content: ""; flex: none; width: 4rem; height: 4rem; background: url('../img/icon/ic_acc_arr02.png') no-repeat center; background-size: 100%;}
+.acc-wrap.v2 > ul > li .acc-tit .category {width: 10rem; font-size: 1.6rem; font-weight: 700;}
+.acc-wrap.v2 > ul > li .acc-tit .thumb {width: 10rem;}
+.acc-wrap.v2 > ul > li .acc-tit .txt-area {flex: 1 0;}
+.acc-wrap.v2 > ul > li .acc-tit .txt-area .txt {font-size: 1.4rem; line-height: 1.6;}
+.acc-wrap.v2 > ul > li .acc-cont {padding-top: 2rem; display: none;}
+.acc-wrap.v2 > ul > li .acc-cont * + .img-area {margin-top: 1rem;}
+.acc-wrap.v2 > ul > li.on {box-shadow: 0.4rem 0.4rem 0.4rem 0 #0000000D; background-color: transparent; border: 1px solid #868E96;}
+.acc-wrap.v2 > ul > li.on .acc-tit::after {transform: rotate(-180deg);}
+
 /* 탭 */
-.tab-wrap.v1 .tab-btn-wrap {display: flex; align-items: center; justify-content: flex-start; gap: 0 0.4rem;}
-.tab-wrap.v1 .tab-btn-wrap .tab-btn {width: 16rem; height: 4.2rem; border: 1px solid #CED4DA; text-align: center; flex: none; font-weight: 500; font-size: 1.6rem; letter-spacing: -0.02em; border-radius: 2.1rem;}
+.tab-wrap.v1 .tab-btn-wrap {display: flex; align-items: center; justify-content: flex-start; gap: 08rem 0.4rem; flex-wrap: wrap; align-items: stretch;}
+.tab-wrap.v1 .tab-btn-wrap .tab-btn {width: calc((100% - 2.4rem)/7); padding: 1rem 0; line-height: 1.25; border: 1px solid #CED4DA; text-align: center; flex: none; font-weight: 500; font-size: 1.6rem; letter-spacing: -0.02em; border-radius: 2.1rem;}
 .tab-wrap.v1 .tab-btn-wrap .tab-btn.on {background-color: #FA5252; border-color: #FA5252; color: #ffffff;}
 .tab-wrap.v1 .tab-cont-wrap .tab-cont {padding-top: 2rem;}
 
@@ -140,7 +153,11 @@ i[class^='ic-'] {display: inline-block; background-repeat: no-repeat; background
 .tbl-wrap{}
 .tbl-wrap table{ width: 100%; table-layout: fixed; }
 
-.tbl-wrap.v1{}
+.tbl-wrap.v1 {display: flex; flex-wrap: wrap; gap: 1rem 3rem; padding: 2rem; border-top: 1px solid #CED4DA; border-bottom: 1px solid #CED4DA;}
+.tbl-wrap.v1 dl {width: calc((100% - 12rem)/5); flex: none; display: flex; align-items: flex-start;}
+.tbl-wrap.v1 dl.full {width: 100%;}
+.tbl-wrap.v1 dl dt {width: 4rem; font-size: 1.2rem; line-height: 1.4; font-weight: 500; color: #868E96;}
+.tbl-wrap.v1 dl dd {flex: 1 0; font-size: 1.4rem; font-weight: 500;}
 
 /* paging */
 .paging {display: flex; align-items: center; justify-content: center; margin-top: 4rem;}
@@ -306,14 +323,30 @@ select.v1 {height: 4rem; border-radius: 0.2rem; border: 1px solid #CED4DA; paddi
     .acc-wrap.v1 > ul > li .acc-cont {padding: 1rem 1rem;}
     .acc-wrap.v1 > ul > li .acc-cont p {font-size: 1.2rem;}
 
+    .acc-wrap.v2 > ul > li {padding: 1rem 1rem;}
+    .acc-wrap.v2 > ul > li .acc-tit {gap: 1rem 1rem; positin: relative; flex-wrap: wrap;}
+    .acc-wrap.v2 > ul > li .acc-tit:after {width: 2.8rem; height: 2.8rem; position: absolute; top: 0; right: 0;}
+    .acc-wrap.v2 > ul > li .acc-tit .category {width: 100%; font-size: 1.4rem;}
+    .acc-wrap.v2 > ul > li .acc-tit .thumb {width: 8rem;}
+    .acc-wrap.v2 > ul > li .acc-tit .txt-area {flex: 1 0;}
+    .acc-wrap.v2 > ul > li .acc-tit .txt-area .txt {font-size: 1.2rem;}
+    .acc-wrap.v2 > ul > li .acc-cont {padding-top: 1rem;}
+    .acc-wrap.v2 > ul > li .acc-cont * + .img-area {margin-top: 1rem;}
+
     /* 탭 */
-    .tab-wrap.v1 .tab-btn-wrap .tab-btn {width: 10rem; height: 3.2rem; font-size: 1.4rem;}
+    .tab-wrap.v1 .tab-btn-wrap .tab-btn {width: calc((100% - 0.8rem)/3); height: 3.2rem; padding: 0; font-size: 1.4rem;}
 
     /* title */
     .tit.v1 {font-size: 1.6rem;}
 
     /* text */
     .txt-warning {padding-left: 2.4rem; line-height: 1.2;}
+
+    /* table */
+    .tbl-wrap.v1 {gap: 1rem 0; padding: 2rem 1rem;}
+    .tbl-wrap.v1 dl {width: 50%;}
+    .tbl-wrap.v1 dl dt {width: 5rem; line-height: 1.2;}
+    .tbl-wrap.v1 dl dd {font-size: 1.2rem;}
 
     /* paging */
     .paging {margin-top: 2rem;}
