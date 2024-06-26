@@ -15,7 +15,7 @@
 /* Display */
 
 /* Margin */
-.m0{ margin: 0px !important; }
+.m0{ margin: 0rem !important; }
 
 .mt0{ margin-top: 0rem !important; }
 .mt4{ margin-top: 0.4rem !important; }
@@ -41,8 +41,8 @@
 .mt95{ margin-top: 9.5rem !important; }
 .mt100{ margin-top: 10rem !important; }
 
-.mb0{ margin-bottom: 0px !important; }
-.mb4{ margin-bottom: 4px !important; }
+.mb0{ margin-bottom: 0rem !important; }
+.mb4{ margin-bottom: 0.4rem !important; }
 .mb5{ margin-bottom: 0.5rem !important; }
 .mb10{ margin-bottom: 1rem !important; }
 .mb12{ margin-bottom: 1.2rem !important; }
@@ -66,10 +66,10 @@
 .mb100{ margin-bottom: 10rem !important; }
 
 /* Padding */
-.p0{ padding: 0px !important; }
+.p0{ padding: 0rem !important; }
 
-.pt0{ padding-top: 0px !important; }
-.pt4{ padding-top: 4px !important; }
+.pt0{ padding-top: 0rem !important; }
+.pt4{ padding-top: 0.4rem !important; }
 .pt5{ padding-top: 0.5rem !important; }
 .pt10{ padding-top: 1rem !important; }
 .pt12{ padding-top: 1.2rem !important; }
@@ -92,8 +92,8 @@
 .pt95{ padding-top: 9.5rem !important; }
 .pt100{ padding-top: 10rem !important; }
 
-.pb0{ padding-bottom: 0px !important; }
-.pb4{ padding-bottom: 4px !important; }
+.pb0{ padding-bottom: 0rem !important; }
+.pb4{ padding-bottom: 0.4rem !important; }
 .pb5{ padding-bottom: 0.5rem !important; }
 .pb10{ padding-bottom: 1rem !important; }
 .pb12{ padding-bottom: 1.2rem !important; }

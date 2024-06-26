@@ -3,12 +3,6 @@
 /*-------------------------------------------------------------------
     파일정의 : 메인 스타일
 -------------------------------------------------------------------*/
-/* 공통 */
-.main{}
-
-.main [class^='sec']{}
-.main [class^='sec'] .tit-sec{}
-
 /* 섹션 */
 .main .visual {position: relative; padding-bottom: 1.8rem;}
 .main .visual .swiper .swiper-wrapper img {margin: 0 auto;}
@@ -57,6 +51,9 @@
 .main .tool .container .division > dl > dd .cont .text-area dl dt {flex: none; width: 4rem; color: #868E96; font-size: 1.6rem; font-weight: 600; line-height: 1.625;}
 .main .tool .container .division > dl > dd .cont .text-area dl dd {font-size: 1.6rem; font-weight: 600; line-height: 1.625;}
 
+/*-------------------------------------------------------------------
+    @반응형
+-------------------------------------------------------------------*/
 @media screen and (max-width: 1175px) {
     .main .inform .container {flex-direction: column;}
     

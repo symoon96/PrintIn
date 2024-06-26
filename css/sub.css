@@ -122,7 +122,7 @@
 /* 주문내역 */
 .order .sub-title + .tab-wrap.v1 {margin-top: 6rem;}
 .order .sub-title + .tab-wrap.v1 > .tab-btn-wrap {justify-content: center;}
-.order .sub-title + .tab-wrap.v1 > .tab-cont-wrap > .tab-cont {margin-top: 9rem;}
+.order .sub-title + .tab-wrap.v1 > .tab-cont-wrap > .tab-cont {padding-top: 9rem;}
 
 /*-------------------------------------------------------------------
     @팝업
@@ -232,6 +232,11 @@
     .mypage .recent .payment-area .text {font-size: 1.2rem;}
     .mypage .recent .payment-area .account {margin-top: 0; font-size: 1.2rem;}
     .mypage .history {margin-top: 6rem;}
+
+    /* 주문내역 */
+    .order .sub-title + .tab-wrap.v1 {margin-top: 4rem;}
+    .order .sub-title + .tab-wrap.v1 > .tab-cont-wrap > .tab-cont {padding-top: 4rem;}
+    .order .sub-title + .tab-wrap.v1 .tab-btn-wrap .tab-btn {width: calc((100% - 1.2rem)/4)}
 
     /*-------------------------------------------------------------------
         @팝업
