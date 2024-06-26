@@ -46,6 +46,8 @@
 #header .branding .all-gnb .depth03 > ul {display: flex; flex-wrap: wrap; gap: 1rem 2rem;}
 #header .branding .all-gnb .depth03 > ul > li {position: relative;}
 #header .branding .all-gnb .depth03 > ul > li::after {content: ""; width: 1px; height: 1rem; background-color: #CED4DA; position: absolute; right: -1rem; top: 0.3rem;}
+#header .branding .all-gnb .depth03 > ul > li:nth-child(3n)::after,
+#header .branding .all-gnb .depth03 > ul > li:last-child::after {display: none;}
 #header .branding .all-gnb .depth03 > ul > li > a {font-size: 1.4rem; line-height: 1.215; display: block; color: #343A40;}
 
 #header .header-mini {display: none; align-items: center; justify-content: flex-start; padding: 1rem 0;}

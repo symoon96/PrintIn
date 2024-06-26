@@ -1,7 +1,12 @@
 $(document).ready(function(){
     accList();
     tab();
-    dateFormatChange()
+    dateFormatChange();
+    fullContentArea();
+
+    $(window).resize(function(){
+        fullContentArea()
+    })
 })
 
 function toggleAllGnb(el){
@@ -150,7 +155,13 @@ function dateFormatChange(){
         let dateDay = date.substr(8, 2);
 
         $(this).closest('.date').find('input[type="text"]').val(dateYear + '.' + dateMonth + '.' + dateDay)
-
-        console.log(dateYear, dateMonth, dateDay)
     });
+}
+
+function fullContentArea(){
+    $('#content').css('min-height', $(window).innerHeight() - $('#header').outerHeight() - $('#footer').outerHeight())
+    
+    // if($(window).width() < 1175){
+    //     $('#content').css('min-height', $(window).innerHeight() - $('#header').outerHeight() - $('#footer').outerHeight())
+    // }
 }

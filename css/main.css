@@ -8,11 +8,12 @@
 .main .visual .swiper .swiper-wrapper img {margin: 0 auto;}
 .main .visual .swiper [class*='swiper-button-'] {width: 4.8rem; height: 4.8rem; background-repeat: no-repeat; background-position: center; background-size: 100%;}
 .main .visual .swiper [class*='swiper-button-']::after {display: none;}
-.main .visual .swiper .swiper-button-prev {background-image: url('../img/icon/ic_main_swiper_l.png');}
-.main .visual .swiper .swiper-button-next {background-image: url('../img/icon/ic_main_swiper_r.png');}
+.main .visual .swiper .swiper-button-prev {background-image: url('../img/icon/ic_main_swiper_l.png'); left: 4rem;}
+.main .visual .swiper .swiper-button-next {background-image: url('../img/icon/ic_main_swiper_r.png'); right: 4rem;}
 .main .visual .swiper-pagination {bottom: 0; display: flex; align-items: center; justify-content: center; gap: 0 0.6rem; z-index: 1;}
 .main .visual .swiper-pagination .swiper-pagination-bullet {opacity: 1; width: 0.8rem; height: 0.8rem; border: 1px solid #343A40; background-color: transparent; margin: 0;}
 .main .visual .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background-color: #343A40;}
+.main .visual .container {position: absolute; top: 0; height: 100%; width: 100%; max-width: 192rem; left: 50%; transform: translateX(-50%); z-index: 1;}
 
 .main .feature {padding: 8rem 0 6rem}
 .main .feature ul {display: flex; align-items: center; justify-content: center; gap: 0 2rem}
@@ -55,6 +56,9 @@
     @반응형
 -------------------------------------------------------------------*/
 @media screen and (max-width: 1175px) {
+    .main .visual .swiper .swiper-button-prev {left: 2rem;}
+    .main .visual .swiper .swiper-button-next {right: 2rem;}
+
     .main .inform .container {flex-direction: column;}
     
     .main .tool .container {flex-direction: column;}
@@ -63,6 +67,8 @@
 @media screen and (max-width: 720px) {
     .main .visual .swiper .swiper-wrapper img {width: 100%;}
     .main .visual .swiper [class*='swiper-button-'] {width: 2.4rem; height: 2.4rem;}
+    .main .visual .swiper .swiper-button-prev {left: 1rem;}
+    .main .visual .swiper .swiper-button-next {right: 1rem;}
 
     .main .feature {padding: 5rem 0 4rem}
     .main .feature ul {flex-wrap: wrap; gap: 4rem 0rem}

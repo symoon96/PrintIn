@@ -17,6 +17,10 @@ $(document).ready(function(){
         pagination: {
             el: ".main .visual .swiper-pagination",
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         loop: true,
     });
 
@@ -44,6 +48,9 @@ function imgChange(object) {
 }
 
 function responsivePortfolio(){
+    if($('.main .portfolio .swiper').length <= 0){
+        return
+    }
     if ($(window).width() < 720 && portfolioSwiper == undefined) {
         portfolioSwiper = new Swiper(".main .portfolio .swiper", {
             slidesPerView: 'auto',

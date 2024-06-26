@@ -99,8 +99,9 @@
 .mypage .status-wrap .status-area dl.item04 dd{color: #4C6EF5;}
 .mypage .status-wrap .status-area dl.item05 dd{background-color: #343A40; color: #ffffff;}
 .mypage .recent {display: flex; align-items: center; justify-content: flex-start; margin-top: 2rem; border-top: 1px solid #CED4DA; border-bottom: 1px solid #CED4DA; padding: 2rem 4rem; flex-wrap: wrap;}
-.mypage .recent .date-area {width: 14rem;}
-.mypage .recent .date-area p {font-size: 1.4rem; font-weight: 600;}
+.mypage .recent .date-area {width: 14rem; display: flex; align-items: center; justify-content: flex-start; gap: 0 1rem;}
+.mypage .recent .date-area .date {font-size: 1.4rem; font-weight: 600;}
+.mypage .recent .date-area .number {display: none; font-size: 1.4rem; font-weight: 600;}
 .mypage .recent .text-area {flex: 1 0;}
 .mypage .recent .text-area .title {font-size: 1.6rem; font-weight: 500; }
 .mypage .recent .text-area .text {font-size: 1.4rem; margin-top: 0.8rem; line-height: 1.6; color: #868E96;}
@@ -156,6 +157,8 @@
     .mypage .status-wrap .status-area dl + dl::before {left: calc((100vw - 59rem)/-5);}
     .mypage .recent {position: relative; padding: 2rem 16rem 2rem 4rem;}
     .mypage .recent .date-area {width: 100%;}
+    .mypage .recent .date-area .date {font-weight: 400;}
+    .mypage .recent .date-area .number {display: block;}
     .mypage .recent .text-area {margin-top: 0.4rem;}
     .mypage .recent .text-area .text {margin-top: 1rem;}
     .mypage .recent .price-area {width: 12rem; position: absolute; right: 4rem; top: 50%; transform: translateY(-50%); text-align: right;}
